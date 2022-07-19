@@ -10,7 +10,7 @@ function Checkout(props) {
     < >
       <div className="w-100 d-flex align-items-center justify-content-between">
         <div className="title"><h2>Price: </h2></div>
-        <div className="title"><h4>$ {props.total}</h4></div>
+        <div className="title" data-testid="naam"><h4 data-cy="total price">$ {props.total+5}</h4></div>
       </div>
       <div className="w-100 d-flex align-items-center justify-content-between">
         <div className="title"><h2>Shipping: </h2></div>
