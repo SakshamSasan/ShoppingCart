@@ -119,7 +119,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    alert("WARNING: Deleting an item will permanently delete it from database. Use cautiously !!");
+    
     //getting the reference for the collection named "products"
     let itemsRef=collection(db,"products")
     //querying by ordering on basis of price

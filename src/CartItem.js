@@ -78,10 +78,10 @@ class CartItem extends React.Component{
               <br />
               <h3 >${price}</h3>
               <br/>
-              <span className="margin-right">Qty: <span>{quantity}</span></span>
-              <span onClick={this.props.increaseEvent.bind(null,this.props.info)} className="action"><i className="fa-solid fa-plus"></i></span>
-              <span onClick={this.props.decreaseEvent.bind(null,this.props.info)} className="mx-2 action"><i className="fa-solid fa-minus"></i></span>
-              <span onClick={this.props.deleteEvent.bind(null,this.props.info)} className="ml-2 action-del"><i className="fa-solid fa-trash-can"></i></span>
+              <span className="margin-right">Qty: <span data-cy={`qty-${title}`}>{quantity}</span></span>
+              <span onClick={this.props.increaseEvent.bind(null,this.props.info)} className="action" data-cy={`increase-${title}`}><i className="fa-solid fa-plus"></i></span>
+              <span onClick={this.props.decreaseEvent.bind(null,this.props.info)} className="mx-2 action" data-cy={`decrease-${title}`}><i className="fa-solid fa-minus"></i></span>
+              <span onClick={this.props.deleteEvent.bind(null,this.props.info)} className="ml-2 action-del" data-cy={`delete-${title}`}><i className="fa-solid fa-trash-can"></i></span>
 
 
             </div>
